@@ -128,3 +128,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 let celsiusTemp = null;
+fahrenheitTemp = Math.round(response.data.main.temp);
