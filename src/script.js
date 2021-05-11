@@ -126,3 +126,5 @@ function showCelsiusTemp(event) {
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
+
+let celsiusTemp = null;
