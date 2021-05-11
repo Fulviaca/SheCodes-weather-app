@@ -113,7 +113,6 @@ function showFahrenheitTemp(event) {
   event.preventDefault();
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
   fahrenheitTemp = Math.round(response.data.main.temp);
 }
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
