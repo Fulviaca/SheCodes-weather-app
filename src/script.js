@@ -32,6 +32,7 @@ if (hours <= 11) {
   currentTime.innerHTML = `${hours}:${minutes} pm`;
 }
 //
+
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(celsiusTemp);
@@ -71,7 +72,7 @@ function currentWeather(response) {
 }
 
 function showPosition(position) {
-  let h1 = document.querySelector("h1");
+  let h1 = document.querySelector("#h1");
   let apiKey = "6f6800edb97a25beaa99162e69c9267a";
   let apiUrl = `api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(currentWeather);
@@ -112,7 +113,6 @@ button.addEventListener("click", getCurrentLocation);
 function showFahrenheitTemp(event) {
   event.preventDefault();
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  let celsiusTemp = (fahrenheitTemp - 32) * (5 / 9);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
