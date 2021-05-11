@@ -112,6 +112,7 @@ button.addEventListener("click", getCurrentLocation);
 function showFahrenheitTemp(event) {
   event.preventDefault();
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  let celsiusTemp = (fahrenheitTemp - 32) * (5 / 9);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
