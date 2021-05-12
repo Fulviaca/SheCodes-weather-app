@@ -33,7 +33,10 @@ if (hours <= 11) {
 }
 //
 
+
+
 function showWeather(response) {
+  celsiusTemp = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(celsiusTemp);
   let iconElement = document.querySelector("#icon");
@@ -47,8 +50,8 @@ function showWeather(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.main.humidity;
-  celsiusTemp = response.data.main.temp;
 }
+
 function search(response) {
   let city = document.querySelector("#city-input").value;
   let apiKey = "6f6800edb97a25beaa99162e69c9267a";
