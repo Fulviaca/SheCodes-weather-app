@@ -55,21 +55,6 @@ footer {
   border-radius: 5px;
 }
 
-.container {
-  position: block;
-  background-color: #ffdcdc;
-  padding: 30px;
-  border-radius: 50px;
-  border: 2px solid #ce1f6a;
-  display: block;
-  margin: 100 100 100 100;
-}
-.container-app {
-  border: 2px solid #ce1f6a;
-  padding: 40px;
-  border-radius: 30px;
-  padding-bottom: 20%;
-}
 .form-control {
   color: black;
   margin: 0 auto;
