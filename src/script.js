@@ -146,15 +146,7 @@ function currentWeather(response) {
   );
 }
 //
-function showPosition(position) {
-  let h1 = document.querySelector("#h1");
-  let apiKey = "6f6800edb97a25beaa99162e69c9267a";
-  let apiUrl = `api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(currentWeather);
-}
 
-function getCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(showPosition);
 }
 //*//
 
@@ -169,8 +161,6 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
-//
-
 //
 function showFahrenheitTemp(event) {
   event.preventDefault();
