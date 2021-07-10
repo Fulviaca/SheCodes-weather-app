@@ -49,6 +49,7 @@ footer {
   max-width: 600px;
   margin: 30px auto;
   background-color: #f6d6c7;
+  border-radius: 25px;
 }
 
 .weather-app {
