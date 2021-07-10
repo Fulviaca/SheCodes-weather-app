@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-image: image("sfondo.jpg");
 }
 button {
   background: #ce1f6a;
