@@ -67,3 +67,9 @@ footer {
 .search-form {
   text-align: center;
 }
+.forecast {
+  position: center;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
