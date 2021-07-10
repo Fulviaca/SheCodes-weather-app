@@ -22,15 +22,7 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-let currentDay = document.querySelector("#current-day");
-let currentTime = document.querySelector("#current-time");
-currentDay.innerHTML = `${today}`;
-currentTime.innerHTML = `${hours}:${minutes}`;
-if (hours <= 11) {
-  currentTime.innerHTML = `${hours}:${minutes} am`;
-} else {
-  currentTime.innerHTML = `${hours}:${minutes} pm`;
-}
+//
 //
 function formatDate(timestamp) {
   let date = new Date(timestamp);
@@ -42,7 +34,6 @@ function formatDate(timestamp) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
   let days = [
     "Sunday",
     "Monday",
