@@ -34,9 +34,9 @@ if (hours <= 11) {
 //
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay, index) {
+  days.forEach(function (days) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
