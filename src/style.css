@@ -52,7 +52,7 @@ footer {
 .weather-app {
   padding: 25px;
   border: 5px solid #ce1f6a;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .form-control {
