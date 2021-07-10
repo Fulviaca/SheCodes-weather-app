@@ -138,17 +138,13 @@ function citySubmit(event) {
 }
 let submit = document.querySelector("#search-form");
 submit.addEventListener("submit", citySubmit);
-//
+
 function currentWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
 }
-//
-
-}
-//*//
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -161,7 +157,7 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
-//
+
 function showFahrenheitTemp(event) {
   event.preventDefault();
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
