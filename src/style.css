@@ -50,8 +50,8 @@ footer {
 }
 
 .weather-app {
-  padding: 20px;
-  border: 1px solid #dadde1;
+  padding: 25px;
+  border: 5px solid #ce1f6a;
   border-radius: 5px;
 }
 
@@ -62,10 +62,4 @@ footer {
 
 .search-form {
   text-align: center;
-}
-.forecast {
-  position: center;
-  text-align: center;
-  font-weight: bold;
-  display: block;
 }
