@@ -1,6 +1,9 @@
-.container {
+body {
   background-image: url("https://image.freepik.com/free-vector/paper-note-memphis-background_53876-99285.jpg");
   height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 button {
   background: #ce1f6a;
