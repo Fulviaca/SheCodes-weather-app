@@ -32,8 +32,16 @@ if (hours <= 11) {
   currentTime.innerHTML = `${hours}:${minutes} pm`;
 }
 //
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+}
 
-
+function getForecast(coordinates) {
+  let apiKey = "6f6800edb97a25beaa99162e69c9267a";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function showWeather(response) {
   celsiusTemp = response.data.main.temp;
@@ -50,6 +58,8 @@ function showWeather(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.main.humidity;
+
+  getForecast(response.data.coord);
 }
 
 function search(response) {
