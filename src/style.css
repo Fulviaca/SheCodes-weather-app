@@ -67,7 +67,7 @@ footer {
   text-align: center;
 }
 
-.weather-forecast-date {
+.col-2 {
   border-radius: 10px;
   background: rgba(236, 193, 160, 0.6);
   margin: -5px, -5px;
