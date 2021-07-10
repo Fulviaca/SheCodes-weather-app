@@ -50,10 +50,7 @@ footer {
   margin: 30px auto;
   background-image: url("https://image.freepik.com/free-vector/neutral-soft-abstract-watercolor-background_53876-97742.jpg");
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .weather-app {
